@@ -1,12 +1,12 @@
 import './App.css'
-import { Button } from './Components/Common/Button'
-
 import { Navbar } from './Components/Common/navbar'
+import { DashboardCard } from './Components/Page/DashboardCard'
 
 function App() {
   return (
     <>
    <Navbar/>
+   <DashboardCard/>
     </>
   )
 }

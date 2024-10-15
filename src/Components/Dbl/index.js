@@ -32,4 +32,38 @@ export const navItems =[
         label:'Cypher Ai',
         link:'#'
     },
+];
+
+
+export const DashCards =[
+    {
+        image:"public/Dashbord/w_smoke.png",
+        heading:"Whitechapel Rd.",
+        location:"Tulare County,  Los Angles, CA 23415",
+        price:"$1,456,654.00",
+    },
+    {
+        image:"public/Dashbord/w-people.png",
+        heading:"Whitechapel Rd.",
+        location:"Tulare County,  Los Angles, CA 23415",
+        price:"$1,456,654.00",
+    },
+    {
+        image:"public/Dashbord/Plain.png",
+        heading:"Whitechapel Rd.",
+        location:"Tulare County,  Los Angles, CA 23415",
+        price:"$1,456,654.00",
+    },
+    {
+        image:"public/Dashbord/fire.png",
+        heading:"Whitechapel Rd.",
+        location:"Tulare County,  Los Angles, CA 23415",
+        price:"$1,456,654.00",
+    },
+    {
+        image:"public/Dashbord/Earthquack.png",
+        heading:"Whitechapel Rd.",
+        location:"Tulare County,  Los Angles, CA 23415",
+        price:"$1,456,654.00",
+    },
 ]
