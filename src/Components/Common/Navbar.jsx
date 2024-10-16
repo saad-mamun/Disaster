@@ -2,8 +2,6 @@
 import React from "react";
 import { Container } from "./Container";
 import { User } from "./User";
-import { Started } from "../Page/Started";
-import { Incidents } from "../Page/Incidents";
 import { NavLink } from "react-router-dom";
 export const Navbar=()=>{
     return(
@@ -16,7 +14,7 @@ export const Navbar=()=>{
                 <div className="hidden lg:flex items-center justify-center  font-Onset xl:gap-7 list-none lg:gap-4 gap-2 text-Opas cursor-pointer">
                     <li><NavLink to="/" >Dashboard</NavLink></li>
                     <li><NavLink to="/Incidents">Incidents</NavLink></li>
-                    <li><NavLink to=''>Locations</NavLink></li>
+                    <li><NavLink to='/IncidentDash'>Locations</NavLink></li>
                     <li>Activities</li>
                     <li>Documents</li>
                     <li>Cypher Ai</li>

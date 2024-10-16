@@ -5,6 +5,7 @@ import { DashboardCard } from './Components/Page/DashboardCard'
 import { Incidents } from './Components/Page/Incidents'
 import { Started } from './Components/Page/Started'
 import { NewIncident } from './Components/Page/NewIncident'
+import { IncidentDash } from './Components/Page/IncidentDash'
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
       <Route path='/Incidents' element={ <Incidents/>}/>
       <Route path='/Started' element={ <Started/> }/>
       <Route path='/NewIncident' element={ <NewIncident/> }/>
+      <Route path='/IncidentDash' element={ <IncidentDash/> }/>
      </Routes>
     </BrowserRouter>
     </>

@@ -5,18 +5,22 @@ import { Button } from "../Common/Button";
 import { Heading } from "../Common/Next/Heading";
 import { HTop } from "../Common/Next/HTop";
 import { NewIncidentCard } from "../Dbl";
-import { Started } from "./Started";
 export const NewIncident=()=>{
     const usenavigate = useNavigate();
     const BacktoSterted=()=>{
         usenavigate('/Started')
     }
+
+    const GotoInsidentDash=()=>{
+        usenavigate('/IncidentDash')
+    }
     return(
         <section>
             <div className="bg-Bhind">
+                {/* nav */}
                 <Container className='flex items-center justify-between'>
-                    <button onClick={()=> BacktoSterted()} className="flex item-center gap-3 ">
-                      <img className="w-[35px] md:w-[55px]"  src="src/assets/X.svg" alt="x" />
+                    <button className="flex item-center justify-center gap-3 ">
+                      <img  onClick={()=> BacktoSterted()}  className="w-[35px] md:w-[55px]"  src="src/assets/X.svg" alt="x" />
                       <div className="space-y-[13px]">
                         <HTop>Home - Incidents - New Incident</HTop>
                         <Heading>New Incident</Heading>
@@ -32,7 +36,7 @@ export const NewIncident=()=>{
                             <button onClick={()=> BacktoSterted()} className="text-DarkBlack">Back</button>
                         </Button>
                         <Button>
-                            <button>Next Step</button>
+                            <button onClick={()=> GotoInsidentDash()} >Next Step</button>
                         </Button>
                     </div>
                 </Container>
