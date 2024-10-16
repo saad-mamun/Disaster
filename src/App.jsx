@@ -3,6 +3,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import { Navbar } from './Components/Common/navbar'
 import { DashboardCard } from './Components/Page/DashboardCard'
 import { Incidents } from './Components/Page/Incidents'
+import { Started } from './Components/Page/Started'
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
      <Routes>
       <Route path='/' element={<DashboardCard/>}/>
       <Route path='/Incidents' element={ <Incidents/>}/>
+      <Route path='/Started' element={ <Started/> }/>
      </Routes>
     </BrowserRouter>
     </>

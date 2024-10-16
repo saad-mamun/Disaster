@@ -3,8 +3,8 @@ import { cn } from "../../Dbl";
 
 export const Heading=({className,children,})=>{
     return(
-    <div className={cn('',className)}>
+    <h1 className={cn('font-bold  text-DarkBlack text-[26px] font-Onset',className)}>
         {children}
-        </div>
+        </h1>
     )
 }

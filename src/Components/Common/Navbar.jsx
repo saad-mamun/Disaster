@@ -2,7 +2,7 @@
 import React from "react";
 import { Container } from "./Container";
 import { User } from "./User";
-
+import { Started } from "../Page/Started";
 import { Incidents } from "../Page/Incidents";
 import { NavLink } from "react-router-dom";
 export const Navbar=()=>{
@@ -13,7 +13,7 @@ export const Navbar=()=>{
                 <div>
                   <img src="public/NavImage/Logo_Main.png" alt="Disaster" />
                 </div>
-                <div className="hidden lg:flex items-center justify-center  font-Onset xl:gap-7 list-none lg:gap-2 text-Opas cursor-pointer">
+                <div className="hidden lg:flex items-center justify-center  font-Onset xl:gap-7 list-none lg:gap-4 gap-2 text-Opas cursor-pointer">
                     <li><NavLink to="/" >Dashboard</NavLink></li>
                     <li><NavLink to="/Incidents">Incidents</NavLink></li>
                     <li>Locations</li>
