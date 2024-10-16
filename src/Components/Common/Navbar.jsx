@@ -1,10 +1,10 @@
 
 import React from "react";
 import { Container } from "./Container";
-import { navItems } from "../Dbl";
 import { User } from "./User";
-import { Dashboard } from "./Dashboard";
 
+import { Incidents } from "../Page/Incidents";
+import { NavLink } from "react-router-dom";
 export const Navbar=()=>{
     return(
        <nav className="bg-Bhind">
@@ -13,24 +13,20 @@ export const Navbar=()=>{
                 <div>
                   <img src="public/NavImage/Logo_Main.png" alt="Disaster" />
                 </div>
-                <div className="hidden  lg:flex justify-center items-center xl:gap-[22px] lg:gap-[15px] gap-2 cursor-pointer">
-                  {
-                    navItems.map(({link,label},i)=> (
-                      <a key={i} href={link}>
-                  <p className="text-sm lg:text-base text-Opas hover:text-DarkBlack hover:font-bold">{label}
-                  </p>
-                  </a>
-                    ))}
+                <div className="hidden lg:flex items-center justify-center  font-Onset xl:gap-7 list-none lg:gap-2 text-Opas cursor-pointer">
+                    <li><NavLink to="/" >Dashboard</NavLink></li>
+                    <li><NavLink to="/Incidents">Incidents</NavLink></li>
+                    <li>Locations</li>
+                    <li>Activities</li>
+                    <li>Documents</li>
+                    <li>Cypher Ai</li>
                 </div>
                 <div>
                   <User/>
                 </div>
             </div>
-            <div className="pt-4">
-              <div className="h-[2px] w-full bg-[#3F3F46]"></div>
-            </div>
-            <div>
-              <Dashboard/>
+            <div className="pt-2">
+              <div className="h-[2px] w-full bg-[#3F3F46]/10"></div>
             </div>
          </Container>
        </nav>

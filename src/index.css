@@ -7,3 +7,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active{
+    color: #09090B;
+    font-weight: bold;
+}
+
