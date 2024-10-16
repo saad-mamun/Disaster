@@ -4,6 +4,7 @@ import { Navbar } from './Components/Common/navbar'
 import { DashboardCard } from './Components/Page/DashboardCard'
 import { Incidents } from './Components/Page/Incidents'
 import { Started } from './Components/Page/Started'
+import { NewIncident } from './Components/Page/NewIncident'
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
       <Route path='/' element={<DashboardCard/>}/>
       <Route path='/Incidents' element={ <Incidents/>}/>
       <Route path='/Started' element={ <Started/> }/>
+      <Route path='/NewIncident' element={ <NewIncident/> }/>
      </Routes>
     </BrowserRouter>
     </>

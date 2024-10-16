@@ -4,7 +4,13 @@ import  {Heading} from "../Common/Next/Heading"
 import { HTop } from "../Common/Next/HTop";
 import { Button } from "../Common/Button";
 import { StartedCard } from "../Dbl";
+import { NewIncident } from "./NewIncident";
+import { useNavigate } from "react-router-dom";
 export const Started=()=>{
+    const usenavigate = useNavigate();
+    const gotoNewIncident =()=>{
+        usenavigate('/NewIncident')
+    }
     return(
        <section>
         <Container>
@@ -28,7 +34,7 @@ export const Started=()=>{
                 </div>
                 <div className="mt-[100px]">
                     <Button>
-                        <button className="flex gap-1">
+                        <button onClick={()=> gotoNewIncident()} className="flex gap-1">
                             <h1>Get</h1>
                             <h1>Started</h1>
                         </button>

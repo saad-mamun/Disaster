@@ -81,3 +81,78 @@ export const StartedCard =[
         des:"Lorem ipsum dolar sit general sac mascho werho",
     },
 ]
+
+export const NewIncidentCard =[
+    {
+        image:"public/insident/Avalanche.png",
+        name:"Avalanche",
+    },
+    {
+        image:"public/insident/Biological.png",
+        name:"Biological",
+    },
+    {
+        image:"public/insident/Blizzard.png",
+        name:"Blizzard",
+    },
+    {
+        image:"public/insident/ColdFreezing.png",
+        name:"Cold/Freezing",
+    },
+    {
+        image:"public/insident/Drought.png",
+        name:"Drought",
+    },
+    {
+        image:"public/insident/Earthquake.png",
+        name:"Earthquake",
+    },
+    {
+        image:"public/insident/Flooding.png",
+        name:"Flooding",
+    },
+    {
+        image:"public/insident/Heat_Wave.png",
+        name:"Heat Wave",
+    },
+    {
+        image:"public/insident/Hail.png",
+        name:"Hail",
+    },
+    {
+        image:"public/insident/Lightning.png",
+        name:"Lightning",
+    },
+    {
+        image:"public/insident/Man_Made.png",
+        name:"Man Made",
+    },
+    {
+        image:"public/insident/Mudslide.png",
+        name:"Mudslide",
+    },
+    {
+        image:"public/insident/Severe_Storm.png",
+        name:"Severe Storm",
+    },
+    {
+        image:"public/insident/Strong_Wind.png",
+        name:"Strong Wind",
+    },
+    {
+        image:"public/insident/Tornado.png",
+        name:"Tornado",
+    },
+    {
+        image:"public/insident/Tsunami.png",
+        name:"Tsunami",
+    },
+    {
+        image:"public/insident/Volcanic_Eruption.png",
+        name:"Volcanic Eruption",
+    },
+    {
+        image:"public/insident/Wildfire.png",
+        name:"Wildfire",
+    },
+]
