@@ -6,6 +6,7 @@ import { Incidents } from './Components/Page/Incidents'
 import { Started } from './Components/Page/Started'
 import { NewIncident } from './Components/Page/NewIncident'
 import { IncidentDash } from './Components/Page/IncidentDash'
+import { MapDisaster } from './Components/Page/MapDisaster'
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
       <Route path='/Started' element={ <Started/> }/>
       <Route path='/NewIncident' element={ <NewIncident/> }/>
       <Route path='/IncidentDash' element={ <IncidentDash/> }/>
+      <Route path='/MapDisaster' element={ <MapDisaster/> } />
      </Routes>
     </BrowserRouter>
     </>

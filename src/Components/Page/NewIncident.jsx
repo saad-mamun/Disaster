@@ -51,7 +51,7 @@ export const NewIncident=()=>{
                          <div className="grid gcl-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                             {
                                 NewIncidentCard.map(({image,name},i)=>(
-                                    <div className="flex item-center bg-[#F4F4F5] py-[22px] px-5 rounded-[6px] gap-2.5">
+                                    <div key={i} className="flex item-center bg-[#F4F4F5] py-[22px] px-5 rounded-[6px] gap-2.5">
                                         <img src={image} alt="Incident" />
                                         <HTop>{name}</HTop>
                                     </div>

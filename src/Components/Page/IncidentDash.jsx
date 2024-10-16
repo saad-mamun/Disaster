@@ -4,11 +4,15 @@ import { Button } from "../Common/Button";
 import { Heading } from "../Common/Next/Heading";
 import { HTop } from "../Common/Next/HTop";
 import { Container } from "../Common/Container";
-
+import { MapDisaster } from "./MapDisaster";
 export const IncidentDash=()=>{
     const usenavigate = useNavigate();
     const BackNewIncident=()=>{
         usenavigate('/NewIncident')
+    };
+
+    const NextMapDisaster=()=>{
+        usenavigate('/MapDisaster')
     }
     return(
         <section>
@@ -32,14 +36,14 @@ export const IncidentDash=()=>{
                             <button onClick={()=> BackNewIncident()} className="text-DarkBlack">Back</button>
                         </Button>
                         <Button>
-                            <button>Next Step</button>
+                            <button onClick={()=> NextMapDisaster()} >Next Step</button>
                         </Button>
                     </div>
                 </Container>
             </div>
             <div >
                 <Container>
-                    <div  className="flex flex-col items-start pl-[250px] pt-[50px] gap-[25px] w-[752px]">
+                    <div  className="flex flex-col items-start xl:pl-[250px] lg:pl-[200px] md:pl-[150px] pt-[50px] w-[752px]">
                       <div>
                        <form>
                         <Heading>Let’s give the incident a title?</Heading>
