@@ -16,16 +16,16 @@ export const IncidentDash=()=>{
     }
     return(
         <section>
-                <div className="bg-Bhind">
+                <div className="bg-Bhind pb-2 w-full">
                 {/* nav */}
                 <Container className='flex items-center justify-between'>
-                    <button className="flex item-center justify-center gap-3 ">
-                      <img  onClick={()=> BackNewIncident()}  className="w-[35px] md:w-[55px]"  src="src/assets/X.svg" alt="x" />
-                      <div className="space-y-[13px]">
+                    <div className="flex item-center justify-center gap-3 ">
+                      <img  onClick={()=> BackNewIncident()}  className="w-[35px] md:w-[55px] shadow-md hover:shadow-Orange rounded-full"  src="src/assets/X.svg" alt="x" />
+                      <div className="hidden md:block space-y-[13px]">
                         <HTop>Home - Incidents - New Incident</HTop>
                         <Heading>New Incident</Heading>
                       </div>
-                    </button>
+                    </div>
                     <div>
                         <img className="w-[0] lg:w-[400px] xl:w-[519px]  border border-slate-300 rounded-full" src="public/insident/bar.png" alt="" />
                     </div>
@@ -43,7 +43,7 @@ export const IncidentDash=()=>{
             </div>
             <div >
                 <Container>
-                    <div  className="flex flex-col items-start xl:pl-[250px] lg:pl-[200px] md:pl-[150px] pt-[50px] w-[752px]">
+                    <div  className="flex flex-col items-start gap-[25px]  xl:pl-[250px] lg:pl-[200px] md:pl-[150px] pt-3 md:pt-[50px] md:w-[752px]">
                       <div>
                        <form>
                         <Heading>Let’s give the incident a title?</Heading>

@@ -13,3 +13,9 @@
     font-weight: bold;
 }
 
+.hovereffect{
+    color: #09090B;
+}
+.hovereffect:hover{
+    color: white;
+}

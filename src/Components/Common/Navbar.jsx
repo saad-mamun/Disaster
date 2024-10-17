@@ -23,7 +23,7 @@ export const Navbar=()=>{
                   <User/>
                 </div>
             </div>
-            <div className="pt-2">
+            <div className="pt-[6px] md:pt-2">
               <div className="h-[2px] w-full bg-[#3F3F46]/10"></div>
             </div>
          </Container>

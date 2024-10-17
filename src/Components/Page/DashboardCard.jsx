@@ -11,7 +11,7 @@ export const DashboardCard=()=>{
               <div className=" bg-Bhind">
                   <Container>
                     <div className="flex items-center justify-between">
-                        <div className="space-y-[13px]">
+                        <div className="space-y-1 md:space-y-[13px]">
                             <HTop>
                                  Welcome back
                             </HTop>
@@ -19,7 +19,7 @@ export const DashboardCard=()=>{
                                 Dashboard
                             </Heading>
                         </div>
-                        <div className="flex gap-3">
+                        <div className="flex gap-0 md:gap-3">
                         <Dashboard/>
                         <Button>
                         <button className="flex flex-nowrap gap-[5px]"><span>Cypher</span> Ai</button>
@@ -29,12 +29,12 @@ export const DashboardCard=()=>{
                  </Container>
                 </div>
             <Container className='flex  justify-center items-center'>
-                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[25px] mt-4">
+                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-2 md:mt-4 gap-0 md:gap-6">
                     {
                     DashCards.map(({image,heading,location,price},i) =>(
                     <div key={i}>
                         <img src={image} alt="Dashboard" />
-                        <div className="space-y-2 mt-5 mb-5">
+                        <div className="space-y-[2px]  md:space-y-2 mt-2 md:mt-4 mb-4 md:mb-5">
                              <h1 className="font-bold font-Opas text-DarkBlack
                                     ">{heading}</h1>
                             <p className="font-Onset text-[#71717A] text-[14px]">{location}</p>

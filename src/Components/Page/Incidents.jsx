@@ -18,7 +18,7 @@ export const Incidents=()=>{
               <div className="w-full bg-Bhind">
                   <Container>
                     <div className='flex justify-between items-center'>
-                    <div className='space-y-[13px]'>
+                    <div className='space-y-0 md:space-y-[13px]'>
                         <HTop>
                         Home - Incidents
                         </HTop>
@@ -31,7 +31,7 @@ export const Incidents=()=>{
                     <Button>
                         <button onClick={()=> gotoPage()} className='flex justify-center items-center gap-2'>
                             <img src="src/assets/plus.svg" alt="New Incident" />
-                            <p className='flex gap-2'>New<span> Incident</span></p>
+                            <p className='flex gap-[5px] md:gap-2'>New<span> Incident</span></p>
                         </button>
                     </Button>
                     </div>
@@ -39,12 +39,12 @@ export const Incidents=()=>{
                  </Container>
                 </div>
             <Container className='flex  justify-center items-center'>
-                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[25px] mt-4">
+                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-0 md:gap-6 mt-4">
                     {
                     DashCards.map(({image,heading,location,price},i) =>(
                     <div key={i}>
                         <img src={image} alt="Dashboard" />
-                        <div className="space-y-2 mt-5 mb-5">
+                        <div className="space-y-[2px] md:space-y-2 mt-2 md:mt- mb-4 md:mb-5">
                              <h1 className="font-bold font-Opas text-DarkBlack
                                     ">{heading}</h1>
                             <p className="font-Onset text-[#71717A] text-[14px]">{location}</p>

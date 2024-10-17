@@ -13,7 +13,7 @@ export const Locations=()=>{
         <section>
             <div className="bg-Bhind">
             <Container>
-                <div className="py-[13px]">
+                <div className="py-[px]">
                     <div className="flex flex-row justify-between items-center">
                         <div className="space-y-[13px]">
                         <HTop>Incidents - DR-4699 March 2023 Severe Storms </HTop>
