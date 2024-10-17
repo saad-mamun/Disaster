@@ -6,6 +6,8 @@ import {HTop} from '../Common/Next/HTop';
 import { Dashboard } from "../Common/Dashboard";
 import { useNavigate } from "react-router-dom";
 import { LocationCards } from "../Dbl";
+import { LocationActive } from "../Dbl";
+import { DocumentcardInLocatin } from "../Dbl";
 export const Locations=()=>{
     return(
         <section>
@@ -78,7 +80,7 @@ export const Locations=()=>{
                         <HTop className='font-bold text-DarkBlack'>Locations</HTop>
                         <HTop className='border-b border-b-slate-500'>See all</HTop>
                         </div>
-                        <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center w-full">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-centercd cd w-full">
                             {
                                 LocationCards.map(({image,title,desc,price},i)=>(
                                     <div key={i} className=" p-2 w-[215px]">
@@ -92,6 +94,55 @@ export const Locations=()=>{
                                 ))
                             }
                         </div>
+                        <div className="bg-[#E4E4E7] w-full border mt-8 mb-10"></div>
+                    </div>
+                    {/* Active section */}
+                    <div >
+                        <div className="flex items-center justify-between pb-2">
+                            <h1 className="font-bold text-DarkBlack">Activities</h1>
+                            <HTop className='text-DarkBlack border-b border-slate-500'>See all</HTop>
+                        </div>
+                        <div className="space-y-2.5">
+                        {
+                            LocationActive.map(({image,title,desc,price},i)=>(
+                                <div key={i} className="w-full bg-[#F4F4F5] flex gap-2.5 py-[15px] px-2.5 rounded-[10px]" >
+                                    <div>
+                                        <img className="size-[78px]" src={image} alt="Location" />
+                                    </div>
+                                    <div className="">
+                                        <Heading className='text-base font-bold ' >{title}</Heading>
+                                        <HTop>{desc}</HTop>
+                                        <Heading className='text-base font-bold'>{price}</Heading>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                        </div>
+                        <div className="bg-[#E4E4E7] w-full border mt-10"></div>
+                    </div>
+                    {/* Document section */}
+                    <div >
+                        <div className="flex items-center justify-between mt-10 pb-2">
+                            <h1 className="font-bold text-DarkBlack">Documents</h1>
+                            <HTop className='text-DarkBlack border-b border-slate-500'>See all</HTop>
+                        </div>
+                        <div className="space-y-2.5">
+                        {
+                            DocumentcardInLocatin.map(({image,title,desc,price},i)=>(
+                                <div key={i} className="w-full bg-[#F4F4F5] flex gap-2.5 py-[15px] px-2.5 rounded-[10px]" >
+                                    <div>
+                                        <img className="size-[78px]" src={image} alt="Location" />
+                                    </div>
+                                    <div className="">
+                                        <Heading className='text-base font-bold ' >{title}</Heading>
+                                        <HTop>{desc}</HTop>
+                                        <Heading className='text-base font-bold'>{price}</Heading>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                        </div>
+                        <div className="bg-[#E4E4E7] w-full border mt-10"></div>
                     </div>
                  </div>
 
