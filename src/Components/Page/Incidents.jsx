@@ -31,7 +31,7 @@ export const Incidents=()=>{
                     <Button>
                         <button onClick={()=> gotoPage()} className='flex justify-center items-center gap-2'>
                             <img src="src/assets/plus.svg" alt="New Incident" />
-                            <p>Incident</p>
+                            <p className='flex gap-2'>New<span> Incident</span></p>
                         </button>
                     </Button>
                     </div>
