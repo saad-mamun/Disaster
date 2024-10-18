@@ -33,7 +33,7 @@ export const NewIncident=()=>{
                     <div className="space-x-[15px]">
                         
                         <Button className='bg-white border border-[#D4D4D8] '>
-                            <button onClick={()=> BacktoSterted()} className="text-DarkBlack hover:shadow-Orange">Back</button>
+                            <button onClick={()=> BacktoSterted()} className="text-DarkBlack hover:text-white">Back</button>
                         </Button>
                         <Button>
                             <button onClick={()=> GotoInsidentDash()} >Next Step</button>
