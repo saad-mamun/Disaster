@@ -53,9 +53,9 @@ export const IncidentDash=()=>{
                      </div>
                      <div>
                        <form>
-                        <Heading>Describe what happened during the incident?</Heading>
-                        <HTop>Share some information about the incident. The when, where, how. </HTop>
-                         <textarea className="bg-[#F4F4F5] p-3 text-Opas mt-4 shadow-md outline-none hover:shadow-lg border rounded-[10px] hover:border-Orange transition-colors delay-200 duration-200" rows="4" cols='50' placeholder="Type here">
+                        <Heading className='w-[300px] md:w-full'>Describe what happened during the incident?</Heading>
+                        <HTop  className='w-[300px] md:w-full'>Share some information about the incident. The when, where, how. </HTop>
+                         <textarea className="bg-[#F4F4F5] p-3 text-Opas mt-4 shadow-md outline-none hover:shadow-lg border rounded-[10px] hover:border-Orange transition-colors delay-200 duration-200" rows="4" cols='40' placeholder="Type here">
                           
                          </textarea>
                        </form>

@@ -14,15 +14,15 @@ export const Started=()=>{
     return(
        <section>
         <Container>
-            <div className="flex flex-col items-center justify-center mt-3 md:mt-20">
-                <Heading className='text-[14px] md:text-[32px]'>Let’s get started
+            <div className="flex flex-col items-center justify-center mt-2 md:mt-20">
+                <Heading className='text-[20px] md:text-[32px]'>Let’s get started
                 </Heading>
-                <HTop className='text-base md:w-[468px] leading-[26px] mt-2'>Lorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit gene</HTop>
+                <HTop className='text-[14px] md:text-base md:w-[468px] md:leading-[26px] md:mt-2'>Lorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit gene</HTop>
                 <img className="my-[20px] md:my-[33px] md:max-w-[601px]" src="src/assets/Progresbar.svg" alt="Get Started" />
                 <div className="flex flex-col md:flex-row  justify-center items-center gap-y-3 md:gap-y-0 gap-[25px] lg:gap-[55px]">
                     {
                         StartedCard.map(({image,Headline,des},i)=>(
-                            <div key={i} className="w-[235px] h-[269px] bg-[#F4F4F5] rounded-[10px] py-[25px] px-[20px] ">
+                            <div key={i} className="md:w-[235px] h-[269px] bg-[#F4F4F5] rounded-[10px] py-[25px] px-[20px] shadow-sm hover:shadow-md">
                                 <img src={image} alt="Disaster" />
                                 <div className="pt-[50px] space-y-[22px]">
                                     <h1 className="text-[20p] font-bold font-Onset leading-[29px]">{Headline}</h1>

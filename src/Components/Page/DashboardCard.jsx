@@ -32,9 +32,9 @@ export const DashboardCard=()=>{
                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-2 md:mt-4 gap-0 md:gap-6">
                     {
                     DashCards.map(({image,heading,location,price},i) =>(
-                    <div key={i}>
+                    <div key={i} className="shadow-sm hover:shadow-lg transition-all delay-200 delay-200 rounded-lg">
                         <img src={image} alt="Dashboard" />
-                        <div className="space-y-[2px]  md:space-y-2 mt-2 md:mt-4 mb-4 md:mb-5">
+                        <div className="space-y-[2px]  md:space-y-2 mt-2 md:mt-4 mb-4">
                              <h1 className="font-bold font-Opas text-DarkBlack
                                     ">{heading}</h1>
                             <p className="font-Onset text-[#71717A] text-[14px]">{location}</p>

@@ -15,7 +15,7 @@ export const Incidents=()=>{
     }
     return(
         <section>
-              <div className="w-full bg-Bhind">
+              <div className=" bg-Bhind">
                   <Container>
                     <div className='flex justify-between items-center'>
                     <div className='space-y-0 md:space-y-[13px]'>
@@ -39,12 +39,12 @@ export const Incidents=()=>{
                  </Container>
                 </div>
             <Container className='flex  justify-center items-center'>
-                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-0 md:gap-6 mt-4">
+                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-6 mt-4 ">
                     {
                     DashCards.map(({image,heading,location,price},i) =>(
-                    <div key={i}>
+                    <div key={i} className='rounded-lg shadow-sm hover:shadow-lg'>
                         <img src={image} alt="Dashboard" />
-                        <div className="space-y-[2px] md:space-y-2 mt-2 md:mt- mb-4 md:mb-5">
+                        <div className="px-2.5 pt-2 pb-3">
                              <h1 className="font-bold font-Opas text-DarkBlack
                                     ">{heading}</h1>
                             <p className="font-Onset text-[#71717A] text-[14px]">{location}</p>
